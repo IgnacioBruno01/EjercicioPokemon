@@ -13,6 +13,11 @@ public class Player
         Console.WriteLine("Whats your name?");
         this.name = Console.ReadLine();
     }
+    
+    void PlayerTurn() 
+    {
+
+    }
 }
 
 

@@ -6,7 +6,7 @@ class GamePlay
 {
     private Player player;
     private EnemyTrainer enemyTrainer;
-
+    private Pokemon pokemon;
     public GamePlay()
     {
         bool load = false;
@@ -14,17 +14,17 @@ class GamePlay
         {
             StartNewGame();
         }
-
-        void StartNewGame()
-        {
-            player = new Player();
-            enemyTrainer = new EnemyTrainer("EnemyTrainer");
-        }
-
-        bool Play()
-        {
-
-        }
+    }
+    void StartNewGame()
+    {
+        player = new Player();
+        enemyTrainer = new EnemyTrainer("EnemyTrainer");
+        pokemon = new Pokemon();
+    }
+    public bool Play()
+    {
+        StartNewGame();
+        return true;
     }
 }
 

@@ -21,7 +21,7 @@ class GamePlay
             enemyTrainer = new EnemyTrainer("EnemyTrainer");
         }
 
-        bool Play() 
+        bool Play()
         {
 
         }

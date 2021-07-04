@@ -1,0 +1,14 @@
+Treecko
+12
+Grass
+40
+40
+45
+65
+35
+55
+70
+Pound
+Leer
+Absorb
+Quick Attack

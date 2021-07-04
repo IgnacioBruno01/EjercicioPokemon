@@ -1,0 +1,12 @@
+Hitmonlee
+12
+Fighting
+50
+50
+120
+35
+53
+110
+87
+Double Kick
+

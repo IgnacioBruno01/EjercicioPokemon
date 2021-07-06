@@ -58,6 +58,7 @@ public sealed class Tackle : Movement
 
 public sealed class Ember : Movement
 {
+    //burn
     public Ember()
     {
         name = "Ember";
@@ -76,6 +77,7 @@ public sealed class Ember : Movement
 }
 public sealed class Harden : Movement
 {
+    //defenseUp
     public Harden()
     {
         name = "Harden";
@@ -94,6 +96,7 @@ public sealed class Harden : Movement
 
 public sealed class MudSlap : Movement
 {
+    //accuaracy
     public MudSlap()
     {
         name = "Mud - Slap";
@@ -112,6 +115,7 @@ public sealed class MudSlap : Movement
 
 public sealed class Headbutt : Movement
 {
+    //flinch
     public Headbutt()
     {
         name = "Headbutt";
@@ -148,7 +152,7 @@ public sealed class Scratch : Movement
 }
 
 public sealed class Growl : Movement
-{
+{//attackdown
     public Growl()
     {
         name = "Growl";
@@ -167,6 +171,7 @@ public sealed class Growl : Movement
 
 public sealed class MetalClaw : Movement
 {
+    //atackup
     public MetalClaw()
     {
         name = "Metal Claw";
@@ -203,6 +208,7 @@ public sealed class RazorLeaf : Movement
 
 public sealed class Reflect : Movement
 {
+    //defenseup solo cuando recive un ataque fisico
     public Reflect()
     {
         name = "Reflect";
@@ -221,6 +227,7 @@ public sealed class Reflect : Movement
 
 public sealed class Leer : Movement
 {
+    //defensedown
     public Leer()
     {
         name = "Leer";
@@ -240,6 +247,7 @@ public sealed class Leer : Movement
 
 public sealed class FocusEnergy : Movement
 {
+    //aumente probabilidad critico 25%
     public FocusEnergy()
     {
         name = "Focus Energy";
@@ -276,7 +284,7 @@ public sealed class Pursuit : Movement
 }
 
 public sealed class CometPunch : Movement
-{
+{//38%probablididad de golpear 2 y 3 veces, 13% probabilidad de golpear 4 y 5 veces
     public CometPunch()
     {
         name = "Comet Punch";
@@ -295,6 +303,7 @@ public sealed class CometPunch : Movement
 }
 public sealed class Agility : Movement
 {
+    //speedup
     public Agility()
     {
         name = "Agility";
@@ -314,6 +323,7 @@ public sealed class Agility : Movement
 
 public sealed class Bubble : Movement
 {
+    //speedDown
     public Bubble()
     {
         name = "Bubble";
@@ -333,6 +343,7 @@ public sealed class Bubble : Movement
 
 public sealed class WaterSport : Movement
 {
+    //movement type fire reduce power 50%
     public WaterSport()
     {
         name = "Water Sport";
@@ -352,6 +363,7 @@ public sealed class WaterSport : Movement
 
 public sealed class TakeDown : Movement
 {
+    //el usuario recive un 25% del daño causado al oponente
     public TakeDown()
     {
         name = "Take Down";
@@ -370,6 +382,7 @@ public sealed class TakeDown : Movement
 }
 public sealed class Smokescreen : Movement
 {
+    //accuaracy
     public Smokescreen()
     {
         name = "Smokescreen";
@@ -406,6 +419,7 @@ public sealed class RockThrow : Movement
 }
 public sealed class Magnitude : Movement
 {
+    // varia la potencia del ataque si la magnitud es de 4 a 10
     public Magnitude()
     {
         name = "Magnitude";
@@ -424,6 +438,7 @@ public sealed class Magnitude : Movement
 }
 public sealed class MudSport : Movement
 {
+    //defenseup
     public MudSport()
     {
         name = "Mud Sport";
@@ -478,6 +493,7 @@ public sealed class WhaterGun : Movement
 }
 public sealed class Rage : Movement
 {
+    //attackup
     public Rage()
     {
         name = "Rage";
@@ -496,6 +512,7 @@ public sealed class Rage : Movement
 }
 public sealed class Withdraw : Movement
 {
+    //defenseup
     public Withdraw()
     {
         name = "Withdraw";
@@ -513,7 +530,7 @@ public sealed class Withdraw : Movement
     }
 }
 public sealed class Absorb : Movement
-{
+{//devuelve en forma de hp el 50% del daño causado al usuario
     public Absorb()
     {
         name = "Absorb";
@@ -531,7 +548,7 @@ public sealed class Absorb : Movement
     }
 }
 public sealed class TailWhip : Movement
-{
+{//defensedown
     public TailWhip()
     {
         name = "Tail Whip";
@@ -604,6 +621,7 @@ public sealed class Peck : Movement
 }
 public sealed class DoubleKick : Movement
 {
+    //ataca dos veces
     public DoubleKick()
     {
         name = "Double Kick";
@@ -622,6 +640,7 @@ public sealed class DoubleKick : Movement
 }
 public sealed class DefenseCurl : Movement
 {
+    //defenseUp
     public DefenseCurl()
     {
         name = "Defense Curl";
@@ -640,6 +659,7 @@ public sealed class DefenseCurl : Movement
 }
 public sealed class RockPolish : Movement
 {
+    //speedup
     public RockPolish()
     {
         name = "Rock Polish";

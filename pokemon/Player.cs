@@ -7,6 +7,7 @@ public class Player
     private string name;
     public Player()
     {
+        Pokemon[] PokemonsTeam = new Pokemon[6];
     }
     public Player(string name)
     {

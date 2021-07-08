@@ -164,3 +164,123 @@ public sealed class AttackUp : PokemonState
         return affected;
     }
 }
+public sealed class DefenseUp : PokemonState
+{
+    public DefenseUp(int maxTurns, int appliedTurns, int probability) : base(maxTurns, appliedTurns, probability)
+    {
+        _maxTurns = 3;
+        _appliedTurns = 0;
+        _probability -= 100;
+    }
+    bool Probability(Pokemon affected)
+    {
+        if (new Random().Next(0, 100) == _probability)
+        {
+            ApplyEffect(affected);
+        }
+        return false;
+    }
+
+    public override Pokemon ApplyEffect(Pokemon affected)
+    {
+        affected. += (affected);
+        _appliedTurns++;
+
+        if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
+        {
+            affected.state = null;
+        }
+
+        return affected;
+    }
+}
+public sealed class DefenseDown : PokemonState
+{
+    public DefenseDown(int maxTurns, int appliedTurns, int probability) : base(maxTurns, appliedTurns, probability)
+    {
+        _maxTurns = 3;
+        _appliedTurns = 0;
+        _probability -= 100;
+    }
+    bool Probability(Pokemon affected)
+    {
+        if (new Random().Next(0, 100) == _probability)
+        {
+            ApplyEffect(affected);
+        }
+        return false;
+    }
+
+    public override Pokemon ApplyEffect(Pokemon affected)
+    {
+        affected. += (affected);
+        _appliedTurns++;
+
+        if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
+        {
+            affected.state = null;
+        }
+
+        return affected;
+    }
+}
+public sealed class SpeedUp : PokemonState
+{
+    public SpeedUp(int maxTurns, int appliedTurns, int probability) : base(maxTurns, appliedTurns, probability)
+    {
+        _maxTurns = 3;
+        _appliedTurns = 0;
+        _probability -= 100;
+    }
+    bool Probability(Pokemon affected)
+    {
+        if (new Random().Next(0, 100) == _probability)
+        {
+            ApplyEffect(affected);
+        }
+        return false;
+    }
+
+    public override Pokemon ApplyEffect(Pokemon affected)
+    {
+        affected. += (affected);
+        _appliedTurns++;
+
+        if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
+        {
+            affected.state = null;
+        }
+
+        return affected;
+    }
+}
+public sealed class SpeedDown : PokemonState
+{
+    public SpeedDown(int maxTurns, int appliedTurns, int probability) : base(maxTurns, appliedTurns, probability)
+    {
+        _maxTurns = 3;
+        _appliedTurns = 0;
+        _probability -= 100;
+    }
+    bool Probability(Pokemon affected)
+    {
+        if (new Random().Next(0, 100) == _probability)
+        {
+            ApplyEffect(affected);
+        }
+        return false;
+    }
+
+    public override Pokemon ApplyEffect(Pokemon affected)
+    {
+        affected. += (affected);
+        _appliedTurns++;
+
+        if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
+        {
+            affected.state = null;
+        }
+
+        return affected;
+    }
+}

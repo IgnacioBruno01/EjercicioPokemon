@@ -18,7 +18,7 @@ class GamePlay
     void StartNewGame()
     {
         player = new Player();
-        enemyTrainer = new EnemyTrainer("EnemyTrainer");
+        enemyTrainer = new EnemyTrainer();
         pokemon = new Pokemon();
     }
     public bool Play()

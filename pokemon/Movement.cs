@@ -8,7 +8,7 @@ public abstract class Movement
     public string name;
     protected int power;
     public int maxUses;
-    public int Uses;
+    public int ActualUses;
     protected int precision;
     public string type;
     public string category;
@@ -23,6 +23,7 @@ public sealed class DefaultError : Movement
         name = "DefaultError";
         power = 0;
         maxUses = 0;
+        ActualUses = 0;
         precision = 0;
         type = "Normal";
         category = "Normal";
@@ -42,7 +43,7 @@ public sealed class Tackle : Movement
         name = "Tackle";
         power = 40;
         maxUses = 35;
-        Uses = 35;
+        ActualUses = 35;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -50,7 +51,6 @@ public sealed class Tackle : Movement
 
     public override Pokemon Use(Pokemon caster, Pokemon objective)
     {
-
         return objective;
     }
 
@@ -68,10 +68,8 @@ public sealed class Ember : Movement
         type = "Fire";
         category = "Special";
     }
-
     public override Pokemon Use(Pokemon caster, Pokemon objective)
     {
-
         return objective;
     }
 }
@@ -83,7 +81,7 @@ public sealed class Harden : Movement
         name = "Harden";
         power = 0;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 0;
         type = "Normal";
         category = "Condition";
@@ -102,7 +100,7 @@ public sealed class MudSlap : Movement
         name = "Mud - Slap";
         power = 20;
         maxUses = 10;
-        Uses = 10;
+        ActualUses = 10;
         precision = 100;
         type = "Rock";
         category = "Special";
@@ -121,7 +119,7 @@ public sealed class Headbutt : Movement
         name = "Headbutt";
         power = 70;
         maxUses = 15;
-        Uses = 15;
+        ActualUses = 15;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -139,7 +137,7 @@ public sealed class Scratch : Movement
         name = "Scratch";
         power = 40;
         maxUses = 35;
-        Uses = 35;
+        ActualUses = 35;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -158,7 +156,7 @@ public sealed class Growl : Movement
         name = "Growl";
         power = 0;
         maxUses = 40;
-        Uses = 40;
+        ActualUses = 40;
         precision = 100;
         type = "Normal";
         category = "Condition";
@@ -177,7 +175,7 @@ public sealed class MetalClaw : Movement
         name = "Metal Claw";
         power = 50;
         maxUses = 35;
-        Uses = 35;
+        ActualUses = 35;
         precision = 95;
         type = "Steel";
         category = "Special";
@@ -195,7 +193,7 @@ public sealed class RazorLeaf : Movement
         name = "Razor Leaf";
         power = 55;
         maxUses = 25;
-        Uses = 25;
+        ActualUses = 25;
         precision = 95;
         type = "Grass";
         category = "Special";
@@ -214,7 +212,7 @@ public sealed class Reflect : Movement
         name = "Reflect";
         power = 0;
         maxUses = 20;
-        Uses = 20;
+        ActualUses = 20;
         precision = 0;
         type = "psychic";
         category = "Condition";
@@ -233,7 +231,7 @@ public sealed class Leer : Movement
         name = "Leer";
         power = 0;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 100;
         type = "Normal";
         category = "Condition";
@@ -253,7 +251,7 @@ public sealed class FocusEnergy : Movement
         name = "Focus Energy";
         power = 0;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 0;
         type = "Normal";
         category = "Condition";
@@ -271,7 +269,7 @@ public sealed class Pursuit : Movement
         name = "Pursuit";
         power = 40;
         maxUses = 20;
-        Uses = 20;
+        ActualUses = 20;
         precision = 100;
         type = "Sinister";
         category = "Physical";
@@ -290,7 +288,7 @@ public sealed class CometPunch : Movement
         name = "Comet Punch";
         power = 18;
         maxUses = 15;
-        Uses = 15;
+        ActualUses = 15;
         precision = 85;
         type = "Normal";
         category = "Physical";
@@ -309,7 +307,7 @@ public sealed class Agility : Movement
         name = "Agility";
         power = 0;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 0;
         type = "psychic";
         category = "Condition";
@@ -329,7 +327,7 @@ public sealed class Bubble : Movement
         name = "Bubble";
         power = 40;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 100;
         type = "Wather";
         category = "Special";
@@ -349,7 +347,7 @@ public sealed class WaterSport : Movement
         name = "Water Sport";
         power = 0;
         maxUses = 15;
-        Uses = 15;
+        ActualUses = 15;
         precision = 0;
         type = "Wather";
         category = "Condition";
@@ -369,7 +367,7 @@ public sealed class TakeDown : Movement
         name = "Take Down";
         power = 90;
         maxUses = 20;
-        Uses = 20;
+        ActualUses = 20;
         precision = 85;
         type = "Normal";
         category = "Physical";
@@ -388,7 +386,7 @@ public sealed class Smokescreen : Movement
         name = "Smokescreen";
         power = 0;
         maxUses = 20;
-        Uses = 20;
+        ActualUses = 20;
         precision = 100;
         type = "Normal";
         category = "Condition";
@@ -406,7 +404,7 @@ public sealed class RockThrow : Movement
         name = "Rock Throw";
         power = 50;
         maxUses = 15;
-        Uses = 15;
+        ActualUses = 15;
         precision = 90;
         type = "Rock";
         category = "Physical";
@@ -425,7 +423,7 @@ public sealed class Magnitude : Movement
         name = "Magnitude";
         power = 0;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 100;
         type = "Ground";
         category = "Physical";
@@ -444,7 +442,7 @@ public sealed class MudSport : Movement
         name = "Mud Sport";
         power = 0;
         maxUses = 15;
-        Uses = 15;
+        ActualUses = 15;
         precision = 0;
         type = "Ground";
         category = "Condition";
@@ -462,7 +460,7 @@ public sealed class KarateChop : Movement
         name = "Karate Chop";
         power = 50;
         maxUses = 25;
-        Uses = 25;
+        ActualUses = 25;
         precision = 100;
         type = "Fighting";
         category = "Physical";
@@ -480,7 +478,7 @@ public sealed class WhaterGun : Movement
         name = "Whater Gun";
         power = 40;
         maxUses = 25;
-        Uses = 25;
+        ActualUses = 25;
         precision = 100;
         type = "Wather";
         category = "Special";
@@ -499,7 +497,7 @@ public sealed class Rage : Movement
         name = "Rage";
         power = 20;
         maxUses = 20;
-        Uses = 20;
+        ActualUses = 20;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -518,7 +516,7 @@ public sealed class Withdraw : Movement
         name = "Withdraw";
         power = 0;
         maxUses = 40;
-        Uses = 40;
+        ActualUses = 40;
         precision = 0;
         type = "Wather";
         category = "Condition";
@@ -536,7 +534,7 @@ public sealed class Absorb : Movement
         name = "Absorb";
         power = 20;
         maxUses = 25;
-        Uses = 25;
+        ActualUses = 25;
         precision = 100;
         type = "Special";
         category = "Grass";
@@ -554,7 +552,7 @@ public sealed class TailWhip : Movement
         name = "Tail Whip";
         power = 0;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -572,7 +570,7 @@ public sealed class QuickAttack : Movement
         name = "QuickAttack";
         power = 40;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -590,7 +588,7 @@ public sealed class Pound : Movement
         name = "Pound";
         power = 40;
         maxUses = 35;
-        Uses = 35;
+        ActualUses = 35;
         precision = 100;
         type = "Normal";
         category = "Physical";
@@ -608,7 +606,7 @@ public sealed class Peck : Movement
         name = "Peck";
         power = 35;
         maxUses = 35;
-        Uses = 35;
+        ActualUses = 35;
         precision = 100;
         type = "Flying";
         category = "Physical";
@@ -627,7 +625,7 @@ public sealed class DoubleKick : Movement
         name = "Double Kick";
         power = 30;
         maxUses = 30;
-        Uses = 30;
+        ActualUses = 30;
         precision = 100;
         type = "Fighting";
         category = "Physical";
@@ -646,7 +644,7 @@ public sealed class DefenseCurl : Movement
         name = "Defense Curl";
         power = 0;
         maxUses = 40;
-        Uses = 40;
+        ActualUses = 40;
         precision = 0;
         type = "Normal";
         category = "Condition";
@@ -665,7 +663,7 @@ public sealed class RockPolish : Movement
         name = "Rock Polish";
         power = 0;
         maxUses = 20;
-        Uses = 20;
+        ActualUses = 20;
         precision = 0;
         type = "Rock";
         category = "Condition";

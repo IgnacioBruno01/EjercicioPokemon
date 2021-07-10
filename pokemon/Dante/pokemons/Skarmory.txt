@@ -1,0 +1,12 @@
+Skarmory
+12
+Steel Flying
+65
+65
+80
+40
+140
+70
+70
+Leer
+Peck

@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 
 public abstract class Movement
 {
     public string name;
     protected int power;
-    public int maxUses;
-    public int ActualUses;
+    protected int maxUses;
+    protected int ActualUses;
     protected int precision;
     public string type;
-    public string category;
+    protected string category;
     public abstract Pokemon Use(Pokemon caster, Pokemon objective);
 }
 

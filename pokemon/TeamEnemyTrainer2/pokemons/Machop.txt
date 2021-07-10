@@ -1,0 +1,10 @@
+Machop
+12
+Fighting
+70
+70
+80
+35
+50
+35
+Karate Chop

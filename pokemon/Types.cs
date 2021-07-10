@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 public enum Type { FIRE, STEEL, FIGHTER, GRASS, ROCK, WATHER, Error }

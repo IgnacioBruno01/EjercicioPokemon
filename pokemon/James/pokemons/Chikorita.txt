@@ -1,0 +1,14 @@
+Chikorita
+12
+Grass
+45
+45
+49
+49
+65
+65
+45
+Tackle
+Growl
+Razor Leaf
+Reflect

@@ -1,0 +1,14 @@
+Golem
+12
+Rock Ground
+80
+80
+120
+55
+130
+65
+45
+Rock Throw
+Tackle
+Mud Sport
+Magnitude

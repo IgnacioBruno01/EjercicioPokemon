@@ -1,0 +1,14 @@
+Aron
+12
+Steel Rock
+50
+50
+70
+40
+100
+40
+30
+Tackle
+Harden
+Mud-Slap
+Headbutt

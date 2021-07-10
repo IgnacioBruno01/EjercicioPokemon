@@ -1,0 +1,12 @@
+Hitmonchan
+12
+Fighting
+50
+50
+105
+35
+79
+110
+76
+Comet Punch
+Agility

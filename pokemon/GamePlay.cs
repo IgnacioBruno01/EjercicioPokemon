@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 class GamePlay
 {
-    private Player player;
-    private EnemyTrainer enemyTrainer;
-    private Pokemon pokemon;
     public GamePlay()
     {
         bool load = false;
@@ -17,9 +15,7 @@ class GamePlay
     }
     void StartNewGame()
     {
-        player = new Player();
-        enemyTrainer = new EnemyTrainer();
-        pokemon = new Pokemon();
+       
     }
     public bool Play()
     {

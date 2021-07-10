@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 public class EnemyTrainer
 {
-    private string name;
+    public string name;
     public EnemyTrainer()
     {
         var trainer1 = new EnemyTrainer(name);
@@ -12,7 +13,8 @@ public class EnemyTrainer
     }
     public EnemyTrainer(string name)
     {
-        _ = this.name;
+        EnemyTrainer enemy = EnemyReadFile.ReadEnemyFromFile("\\Dante\\NameEnemy.txt");
+         this.name;
     }
 
     void EnemyTrainerTurn()

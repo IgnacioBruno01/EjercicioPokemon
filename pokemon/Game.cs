@@ -15,7 +15,7 @@ class Game
         }
         return instance;
     }
-    enum State { Gameplay, Pause };
+    enum State { Menu, Gameplay, Pause };
 
     private GamePlay gameplay;
     private PauseMenu pauseMenu;
@@ -28,7 +28,7 @@ class Game
         state = State.Gameplay;
     }
 
-    public void Update()
+    public bool Update()
     {
         switch (state)
         {
@@ -41,6 +41,7 @@ class Game
             default:
                 break;
         }
+        return true;
     }
 
     public static void GoToPause()

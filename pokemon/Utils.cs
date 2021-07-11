@@ -16,9 +16,8 @@ public static class PokemonReader
         string[] types = lines[2].Split(" ");
         for (int i = 0; i < types.Length; i++)
         {
-            P.types.Add(Types.GetInstance().GetType(type[i]));
+            P.types.Add(Types.GetInstance().GetType(types[i]));
         }
-
         P.Hp = Convert.ToInt32(lines[3]);
         P.MaxHp = Convert.ToInt32(lines[3]);
         P.Attack = Convert.ToInt32(lines[4]);
@@ -132,26 +131,5 @@ public static class MovementDatabase
             Console.WriteLine(e.Message);
             return e.GetDefaultMovement();
         }
-    }
-
-}
-public static class PlayerReadFile
-{
-    public static Player ReadPlayerFromFile(string path)
-    {
-        Player player = new Player();
-        string[] lines = File.ReadAllLines(path);
-        player.name = lines[0];
-        return player;
-    }
-}
-public static class EnemyReadFile
-{
-    public static EnemyTrainer ReadEnemyFromFile(string path)
-    {
-        EnemyTrainer enemy = new EnemyTrainer();
-        string[] lines = File.ReadAllLines(path);
-        enemy.name = lines[0];
-        return enemy;
     }
 }

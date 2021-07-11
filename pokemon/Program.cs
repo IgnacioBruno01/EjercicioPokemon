@@ -8,10 +8,10 @@ class Program
 
         try
         {
-            GamePlay game = new GamePlay();
+            Game game = new Game();
             do
             {
-                gameOpen = game.Play();
+                gameOpen = game.Update();
             } while (gameOpen);
         }
         catch (Exception e)

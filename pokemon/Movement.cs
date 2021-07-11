@@ -14,7 +14,17 @@ public abstract class Movement
     public string type;
     protected string category;
     public abstract Pokemon Use(Pokemon caster, Pokemon objective);
+
+    public int GetPrecision()
+    {
+        return precision;
+    }
+    public void SetPrecision(int NewPrecision)
+    {
+        precision = NewPrecision;
+    }
 }
+
 
 
 public sealed class DefaultError : Movement

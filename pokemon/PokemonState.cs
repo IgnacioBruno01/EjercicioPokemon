@@ -64,7 +64,7 @@ public sealed class Accuaracy : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected.Hp -= (affected.MaxHp / 16);
+        affected.GetMovement(affected);
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
@@ -124,7 +124,7 @@ public sealed class AttackDown : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected. -= (affected);
+        affected.Attack = affected.Attack / 2;
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
@@ -154,7 +154,7 @@ public sealed class AttackUp : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected. += (affected);
+        affected.Attack = affected.Attack * 2;
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
@@ -184,7 +184,7 @@ public sealed class DefenseUp : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected. += (affected);
+        affected.Defense = affected.Defense * 2;
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
@@ -214,7 +214,7 @@ public sealed class DefenseDown : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected. += (affected);
+        affected.Defense = affected.Defense / 2;
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
@@ -244,7 +244,7 @@ public sealed class SpeedUp : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected. += (affected);
+        affected.Speed = affected.Speed * 2;
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
@@ -274,7 +274,7 @@ public sealed class SpeedDown : PokemonState
 
     public override Pokemon ApplyEffect(Pokemon affected)
     {
-        affected. += (affected);
+        affected.Speed = affected.Speed / 2;
         _appliedTurns++;
 
         if (new Random().Next(_appliedTurns, _maxTurns) == _maxTurns)
